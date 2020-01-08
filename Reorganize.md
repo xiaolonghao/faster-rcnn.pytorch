@@ -74,7 +74,7 @@ ln -s VOCdevkit  $datadir/VOCdevkit2007
 
 cd -
 
-###例如voc2012：
+### 例如voc2012：
 
 cd detection_datas/voc2012/
 
