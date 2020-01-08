@@ -18,6 +18,7 @@ cd faster-rcnn.pytorch && mkdir data
 
 datadir=`echo $PWD`
 
+
 4. 安装库文件
 
 注意：要求python=3.6.5 pytorch=1.0.0  torchvision=0.2.1 pillow=6.2.1 scipy=1.4.1等（亲测可以，别的需要自己测试）
