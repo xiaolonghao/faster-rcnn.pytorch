@@ -16,7 +16,7 @@ cd faster-rcnn.pytorch && mkdir data
 
 注：创建数据库时用 
 
-datadir=$(echo $PWD)
+datadir=$(echo $PWD)/data
 
 
 4.安装库文件
@@ -60,7 +60,8 @@ git clone https://github.com/xiaolonghao/detection_datas_url.git
 
 ## 2. 解压并进入对应文件夹运行download.sh
 
-tar -xf -xvf detection_datas_url/detection_datas.tar.gz
+tar -xf detection_datas_url/detection_datas.tar.gz
+basedir=$(echo $PWD)
 
 ### 例如voc2007：
 
@@ -74,9 +75,13 @@ tar -xf VOCtest_06-Nov-2007.tar
 
 tar -xf VOCdevkit_08-Jun-2007.tar
 
-ln -s VOCdevkit  $datadir/VOCdevkit2007
+dataset=$(echo $PWD)/VOCdevkit
 
-cd -
+cd $datadir
+
+ln -s $dataset  VOCdevkit2007
+
+cd $basedir
 
 ### 例如voc2012：
 
@@ -86,9 +91,13 @@ sh download.sh
 
 tar -xf VOCtrainval_11-May-2012.tar
 
-ln -s VOCdevkit  $datadir/VOCdevkit2012
+dataset=$(echo $PWD)/VOCdevkit
 
-cd -
+cd $datadir
+
+ln -s $dataset   VOCdevkit2012
+
+cd $basedir
 
 ### 例如coco2014：
 
@@ -99,7 +108,7 @@ sh download.sh
 ...
 ...
 
-cd -
+cd $basedir
 
 ### 例如coco2017：
 
@@ -110,5 +119,5 @@ sh download.sh
 ...
 ...
 
-cd -
+cd $basedir
 
