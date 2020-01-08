@@ -15,6 +15,7 @@ git clone https://github.com/xiaolonghao/cocoapi.git
 cd faster-rcnn.pytorch && mkdir data
 
 注：创建数据库时用
+
 datadir=`echo $PWD`
 
 4. 安装库文件
@@ -32,6 +33,7 @@ conda install -c psi4 gcc-5
 (1)安装cocoAPI 到 python 的 site-packages 中
 
 cd ../cocoapi/PythonAPI
+
 make install
 
 或者(2) 安装cocoAPI 到pytorch1.0分支中
@@ -46,31 +48,47 @@ python setup.py build develop
 
 
 # 如果没有数据库可以通过以下步骤下载数据库
+
 1. 下载链接
+
 git clone https://github.com/xiaolonghao/detection_datas_url.git
 
 2. 解压并进入对应文件夹运行download.sh
+
 tar -xf -xvf detection_datas_url/detection_datas.tar.gz
 
 例如voc2007：
+
 cd detection_datas/voc2007/
+
 sh download.sh
 
 tar -xf VOCtrainval_06-Nov-2007.tar
+
 tar -xf VOCtest_06-Nov-2007.tar
+
 tar -xf VOCdevkit_08-Jun-2007.tar
+
 ln -s VOCdevkit  $datadir/VOCdevkit2007
+
 cd -
 
 例如voc2012：
+
 cd detection_datas/voc2012/
+
 sh download.sh
+
 tar -xf VOCtrainval_11-May-2012.tar
+
 ln -s VOCdevkit  $datadir/VOCdevkit2012
+
 cd -
 
 例如coco2014：
+
 cd detection_datas/coco2014/
+
 sh download.sh
 
 ...
@@ -79,7 +97,9 @@ sh download.sh
 cd -
 
 例如coco2017：
+
 cd detection_datas/coco2017/
+
 sh download.sh
 
 ...
