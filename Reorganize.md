@@ -41,7 +41,7 @@ make install
 
 或者(2) 安装cocoAPI 到pytorch1.0分支中
 
-mv pycocotools/ ../../faster-rcnn.pytorch/lib
+cp -rf pycocotools/ ../../faster-rcnn.pytorch/lib
 
 7.编译
 
