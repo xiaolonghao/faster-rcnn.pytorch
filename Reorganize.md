@@ -14,9 +14,9 @@ git clone https://github.com/xiaolonghao/cocoapi.git
 
 cd faster-rcnn.pytorch && mkdir data
 
-注：创建数据库时用
+注：创建数据库时用 
 
-datadir=`echo $PWD`
+datadir=$(echo $PWD)
 
 
 4. 安装库文件
