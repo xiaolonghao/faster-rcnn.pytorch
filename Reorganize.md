@@ -50,15 +50,15 @@ python setup.py build develop
 
 # 如果没有数据库可以通过以下步骤下载数据库
 
-1. 下载链接
+## 1. 下载链接
 
 git clone https://github.com/xiaolonghao/detection_datas_url.git
 
-2. 解压并进入对应文件夹运行download.sh
+## 2. 解压并进入对应文件夹运行download.sh
 
 tar -xf -xvf detection_datas_url/detection_datas.tar.gz
 
-例如voc2007：
+### 例如voc2007：
 
 cd detection_datas/voc2007/
 
@@ -74,7 +74,7 @@ ln -s VOCdevkit  $datadir/VOCdevkit2007
 
 cd -
 
-例如voc2012：
+###例如voc2012：
 
 cd detection_datas/voc2012/
 
@@ -86,7 +86,7 @@ ln -s VOCdevkit  $datadir/VOCdevkit2012
 
 cd -
 
-例如coco2014：
+### 例如coco2014：
 
 cd detection_datas/coco2014/
 
@@ -97,7 +97,7 @@ sh download.sh
 
 cd -
 
-例如coco2017：
+### 例如coco2017：
 
 cd detection_datas/coco2017/
 
