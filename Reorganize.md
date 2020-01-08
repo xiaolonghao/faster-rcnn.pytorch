@@ -4,7 +4,7 @@
 
 1.下载pytorch1.0分支
 
-git clone https://github.com/jwyang/faster-rcnn.pytorch.git -b pytorch-1.0
+git clone https://github.com/xiaolonghao/faster-rcnn.pytorch.git -b pytorch-1.0
 
 2.下载cocoAPI
 
