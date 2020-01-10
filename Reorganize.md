@@ -61,6 +61,7 @@ git clone https://github.com/xiaolonghao/detection_datas_url.git
 ## 2. 解压并进入对应文件夹运行download.sh
 
 tar -xf detection_datas_url/detection_datas.tar.gz
+
 basedir=$(echo $PWD)
 
 ### 例如voc2007：
